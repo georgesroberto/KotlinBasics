@@ -1,0 +1,16 @@
+fun main(args: Array<String>) {
+//Takes number as input and converts to integer
+    var num = readLine()!!.toInt()
+    //decalaration of sum variable to 0
+    var sum = 0
+    //initiatle the while statement
+    while(num > 0){
+    //Adds sum to the remainder eg input of 426 will have 6 as the remainder so it add 6 to sum which is 0 + 6 = 6
+        sum += num%10
+        //We then remove 6 after adding it by dividing the number input by 10 giving as: 426/10 = 42 as new num
+        num/=10
+        //42 is still greater than 0 so the loop is still true and is executed
+    }
+    //Output the final sum
+    println(sum)
+}
